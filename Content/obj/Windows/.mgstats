@@ -1,6 +1,9 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/dev/Fantasy/Content/adventurer.aseprite","C:/dev/Fantasy/Content/bin/Windows/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",9592,37265,0.1047092
-"C:/dev/Fantasy/Content/crops.aseprite","C:/dev/Fantasy/Content/bin/Windows/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.0199908
-"C:/dev/Fantasy/Content/desert.tsx","C:/dev/Fantasy/Content/bin/Windows/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0563021
-"C:/dev/Fantasy/Content/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1162226
-"C:/dev/Fantasy/Content/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0263348
+"C:/dev/Fantasy/Content/adventurer.aseprite","C:/dev/Fantasy/Content/bin/Windows/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",9592,37265,0.1048797
+"C:/dev/Fantasy/Content/crops.aseprite","C:/dev/Fantasy/Content/bin/Windows/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.0201863
+"C:/dev/Fantasy/Content/desert.tsx","C:/dev/Fantasy/Content/bin/Windows/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0570323
+"C:/dev/Fantasy/Content/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1181835
+"C:/dev/Fantasy/Content/Sensation.fnt","C:/dev/Fantasy/Content/bin/Windows/Sensation.xnb","BitmapFontProcessor","BitmapFontProcessorResult",35751,10059,0.0252564
+"C:/dev/Fantasy/Content/Sensation_0.png","C:/dev/Fantasy/Content/bin/Windows/Sensation_0.xnb","TextureProcessor","Texture2DContent",11318,131157,0.0049526
+"C:/dev/Fantasy/Content/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",389,99,0.001139
+"C:/dev/Fantasy/Content/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0265513

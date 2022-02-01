@@ -11,16 +11,16 @@ using Fantasy.Framework2D;
 using MonoGame.Extended.Collisions;
 using MonoGame.Extended.Sprites;
 
-namespace Fantasy.Screens
+namespace Fantasy.Game.Screens
 {  
-    public class WorldScreen : GameScreen
+    public class LocalAreaScreen : GameScreen
     {
         public Fantasy.Game.World _world;        
         private KeyboardListener  _keyboardListener;        
         private OrthographicCamera _camera;
         private SpriteRenderer _spriteRenderer;  
         CollisionComponent _collisionComponent;
-        public WorldScreen(Microsoft.Xna.Framework.Game game) : base (game)
+        public LocalAreaScreen(Microsoft.Xna.Framework.Game game) : base (game)
         {
             
         }

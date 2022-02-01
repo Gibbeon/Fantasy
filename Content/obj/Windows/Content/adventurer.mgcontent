@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/dev/Fantasy/Content/adventurer.aseprite</SourceFile>
+  <SourceFile>C:/dev/Fantasy/Content/adventurer.aseprite</SourceFile>
   <SourceTime>2022-01-25T18:43:19.8170704-06:00</SourceTime>
-  <DestFile>c:/dev/Fantasy/Content/bin/Windows/Content/adventurer.xnb</DestFile>
-  <DestTime>2022-01-31T21:22:53.3887341-06:00</DestTime>
+  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Content/adventurer.xnb</DestFile>
+  <DestTime>2022-01-31T23:11:54.6587801-06:00</DestTime>
   <Importer>AsepriteDocumentImporter</Importer>
   <ImporterTime>2021-01-25T00:40:14-06:00</ImporterTime>
   <Processor>AsepriteDocumentProcessor</Processor>

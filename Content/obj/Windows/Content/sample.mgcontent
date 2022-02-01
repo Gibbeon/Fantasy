@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/dev/Fantasy/Content/sample.tmx</SourceFile>
+  <SourceFile>C:/dev/Fantasy/Content/sample.tmx</SourceFile>
   <SourceTime>2022-01-25T20:46:20.5066415-06:00</SourceTime>
-  <DestFile>c:/dev/Fantasy/Content/bin/Windows/Content/sample.xnb</DestFile>
-  <DestTime>2022-01-31T21:22:53.534735-06:00</DestTime>
+  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Content/sample.xnb</DestFile>
+  <DestTime>2022-01-31T23:11:54.8137806-06:00</DestTime>
   <Importer>TiledMapImporter</Importer>
   <ImporterTime>2020-08-29T17:17:30-05:00</ImporterTime>
   <Processor>TiledMapProcessor</Processor>
   <ProcessorTime>2020-08-29T17:17:30-05:00</ProcessorTime>
   <Dependencies />
   <BuildAsset>
-    <string>c:/dev/Fantasy/Content/bin/Windows/Content/desert_0.xnb</string>
+    <string>C:/dev/Fantasy/Content/bin/Windows/Content/desert_0.xnb</string>
   </BuildAsset>
   <BuildOutput />
 </PipelineBuildEvent>
