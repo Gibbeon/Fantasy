@@ -1,0 +1,114 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Aether.Physics2D" Version="1.6.1" />
+    <PackageReference Include="MonoGame.Aseprite" Version="2.0.4.1" />
+    <PackageReference Include="MonoGame.Extended" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Collisions" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Content.Pipeline" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Entities" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Graphics" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Gui" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Input" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Particles" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.SceneGraphs" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Tiled" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Tweening" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="SpriteFontPlus" Version="0.9.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvailableItemName Include="MonoGameContentReference" />
+  </ItemGroup>
+
+  <!-- Get all Mono Game Content References and store them in a list -->
+  <ItemGroup>
+    <ContentReferences Include="@(MonoGameContentReference)" />
+  </ItemGroup>
+
+  <!-- This disables the IDE feature that skips executing msbuild in some build situations. --> 
+  <!--PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup-->
+
+  <!--Target Name="Prepare">
+
+    <PropertyGroup>
+
+      <ContentRootDirectory>Content</ContentRootDirectory>
+      <ParentOutputDir>$(ProjectDir)$(ContentRootDirectory)\bin\$(MonoGamePlatform)</ParentOutputDir>
+      <ParentIntermediateDir>$(ProjectDir)$(ContentRootDirectory)\obj\$(MonoGamePlatform)</ParentIntermediateDir>
+
+      <MonoGameContentBuilderExe Condition="'$(MonoGameContentBuilderExe)' == ''">C:\Users\me\.dotnet\tools\mgcb.exe</MonoGameContentBuilderExe>
+
+      <Header>/platform:$(MonoGamePlatform) /outputDir:&quot;$(ParentOutputDir)&quot; /intermediateDir:&quot;$(ParentIntermediateDir)&quot; /quiet</Header>
+
+    </PropertyGroup>
+
+    <Error Text="The MonoGamePlatform property was not defined in the project!  It must be set to Windows, WindowsGL, WindowsStoreApp, WindowsPhone8, MacOSX, iOS, Linux, RaspberryPi, Android, Ouya, NativeClient, PlayStation4, or PlayStationMobile."
+       Condition="	'$(MonoGamePlatform)' != 'Windows' And
+			'$(MonoGamePlatform)' != 'iOS' And       
+			'$(MonoGamePlatform)' != 'Android' And       
+			'$(MonoGamePlatform)' != 'Linux' And       
+			'$(MonoGamePlatform)' != 'MacOSX' And       
+			'$(MonoGamePlatform)' != 'WindowsStoreApp' And       
+			'$(MonoGamePlatform)' != 'NativeClient' And       
+			'$(MonoGamePlatform)' != 'Ouya' And       
+			'$(MonoGamePlatform)' != 'PlayStationMobile' And       
+			'$(MonoGamePlatform)' != 'WindowsPhone8' And       
+			'$(MonoGamePlatform)' != 'RaspberryPi' And       
+			'$(MonoGamePlatform)' != 'PlayStation4' And       
+			'$(MonoGamePlatform)' != 'WindowsGL'" />
+
+    <Error
+        Text="The MonoGame content builder executable could not be located at '$(MonoGameContentBuilderExe)'!"
+        Condition="!Exists('$(MonoGameContentBuilderExe)')"
+      />
+
+    <MakeDir Directories="$(ParentIntermediateDir)"/>
+    <MakeDir Directories="$(ParentOutputDir)"/>
+
+  </Target>
+
+  <Target Name="BuildContent"
+        BeforeTargets="PreBuildEvent;Rebuild"
+        DependsOnTargets="Prepare">
+
+    <Exec Command="&quot;$(MonoGameContentBuilderExe)&quot; /@:&quot;%(ContentReferences.FullPath)&quot; $(Header)"
+          WorkingDirectory="%(ContentReferences.RootDir)%(ContentReferences.Directory)" />
+
+    <ItemGroup>
+
+      <ExtraContent Include="$(ParentOutputDir)\**\*.*" />
+
+      <Content Include="@(ExtraContent->'$(ParentOutputDir)\%(RecursiveDir)%(Filename)%(Extension)')" Condition="$(MonoGamePlatform) != 'Android'">
+        <Link>$(ContentRootDirectory)\%(ExtraContent.RecursiveDir)%(Filename)%(Extension)</Link>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+
+      <AndroidAsset Include="@(ExtraContent->'$(ParentOutputDir)\%(RecursiveDir)%(Filename)%(Extension)')" Condition="$(MonoGamePlatform) == 'Android'">
+        <Link>Assets\$(ContentRootDirectory)\%(ExtraContent.RecursiveDir)%(Filename)%(Extension)</Link>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AndroidAsset>
+
+    </ItemGroup>
+
+  </Target-->
+</Project>

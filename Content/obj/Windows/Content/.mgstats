@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"c:/dev/Fantasy/Content/adventurer.aseprite","c:/dev/Fantasy/Content/bin/Windows/Content/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",9592,37265,0.1084847
+"c:/dev/Fantasy/Content/crops.aseprite","c:/dev/Fantasy/Content/bin/Windows/Content/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.0222801
+"c:/dev/Fantasy/Content/desert.tsx","c:/dev/Fantasy/Content/bin/Windows/Content/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0589498
+"c:/dev/Fantasy/Content/sample.tmx","c:/dev/Fantasy/Content/bin/Windows/Content/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1188321
+"c:/dev/Fantasy/Content/tmw_desert_spacing.png","c:/dev/Fantasy/Content/bin/Windows/Content/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0289354
