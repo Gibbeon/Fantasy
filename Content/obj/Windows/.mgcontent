@@ -10,8 +10,10 @@
     <File>C:/dev/Fantasy/Content/Sensation.fnt</File>
     <File>C:/dev/Fantasy/Content/Sensation_0.png</File>
     <File>C:/dev/Fantasy/Content/sm_arial.fnt</File>
+    <File>C:/dev/Fantasy/Content/sm_arial_0.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

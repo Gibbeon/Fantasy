@@ -5,5 +5,6 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/dev/Fantasy/Content/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1236811
 "C:/dev/Fantasy/Content/Sensation.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Sensation.xnb","BitmapFontProcessor","BitmapFontProcessorResult",35751,10059,0.1068703
 "C:/dev/Fantasy/Content/Sensation_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Sensation_0.xnb","TextureProcessor","Texture2DContent",11318,131157,0.1063789
-"C:/dev/Fantasy/Content/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",389,99,0.0981628
+"C:/dev/Fantasy/Content/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",13263,3998,0.1030065
+"C:/dev/Fantasy/Content/sm_arial_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/sm_arial_0.xnb","TextureProcessor","Texture2DContent",10092,262229,0.0266342
 "C:/dev/Fantasy/Content/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/Content/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0270282
