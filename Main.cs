@@ -37,24 +37,9 @@ namespace Fantasy
             _guiSystem.ClientSizeChanged();
         }
 
-        protected override void LoadContent()
-        {    
-            _screenManager = new ScreenManager();
-            Components.Add(_screenManager);
-
-            _screenManager.LoadScreen(new LocalAreaScreen(this));
-            var guiRenderer = new GuiSpriteBatchRenderer(GraphicsDevice, () => Matrix.Identity);
-
-            var viewportAdapter = new MonoGame.Extended.ViewportAdapters.DefaultViewportAdapter(GraphicsDevice);
-            
-            var font = Content.Load<MonoGame.Extended.BitmapFonts.BitmapFont>("sm_arial");
-            MonoGame.Extended.BitmapFonts.BitmapFont.UseKernings = false;
-            Skin.CreateDefault(font);
-
-            var test = new MonoGame.Extended.Gui.Screen
-            {
-
-                Content = new MonoGame.Extended.Gui.Controls.StackPanel
+        protected MonoGame.Extended.Gui.Controls.Control GetInventoryBar()
+        {
+            return new MonoGame.Extended.Gui.Controls.StackPanel
                 {
                     Height = 32,
                     Spacing = 3,
@@ -68,7 +53,8 @@ namespace Fantasy
                             Name = "Button1",       
                             BackgroundColor = new Color(30, 30, 30, 128),                     
                             Content = new Label("1") { VerticalTextAlignment = VerticalAlignment.Top },
-                            Width = 32
+                            Width = 32,
+                            IsPressed = true
                         },
                         new Button
                         {
@@ -127,7 +113,26 @@ namespace Fantasy
                             
                         }
                     }
-                }
+                };
+        }
+
+        protected override void LoadContent()
+        {    
+            _screenManager = new ScreenManager();
+            Components.Add(_screenManager);
+
+            _screenManager.LoadScreen(new LocalAreaScreen(this));
+            var guiRenderer = new GuiSpriteBatchRenderer(GraphicsDevice, () => Matrix.Identity);
+
+            var viewportAdapter = new MonoGame.Extended.ViewportAdapters.DefaultViewportAdapter(GraphicsDevice);
+            
+            var font = Content.Load<MonoGame.Extended.BitmapFonts.BitmapFont>("sm_arial");
+            MonoGame.Extended.BitmapFonts.BitmapFont.UseKernings = false;
+            Skin.CreateDefault(font);
+
+            var test = new MonoGame.Extended.Gui.Screen
+            {
+                Content = GetInventoryBar()
             };
 
             _guiSystem = new GuiSystem(viewportAdapter, guiRenderer) {

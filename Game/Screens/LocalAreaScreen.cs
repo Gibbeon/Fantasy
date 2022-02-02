@@ -20,6 +20,7 @@ namespace Fantasy.Game.Screens
         private OrthographicCamera _camera;
         private SpriteRenderer _spriteRenderer;  
         CollisionComponent _collisionComponent;
+        MapTileReticule _mapTileReticule;
         public LocalAreaScreen(Microsoft.Xna.Framework.Game game) : base (game)
         {
             
@@ -29,6 +30,9 @@ namespace Fantasy.Game.Screens
         {
             _camera         = new OrthographicCamera(Game.GraphicsDevice); 
             _spriteRenderer    = new SpriteRenderer(Game.GraphicsDevice);
+
+            _mapTileReticule = new MapTileReticule(Game);
+            _mapTileReticule.Initialize();
 
             _world          = new Game.World(Game);
             _world.Initialize(); 
@@ -46,7 +50,7 @@ namespace Fantasy.Game.Screens
                 InitialDelayMilliseconds = 0           
             });
 
-            _keyboardListener.KeyPressed += MoveCamera;
+            _keyboardListener.KeyPressed += MoveSprite;
             
         }
         protected void MoveCamera(object sender, KeyboardEventArgs args)
@@ -64,26 +68,7 @@ namespace Fantasy.Game.Screens
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.Right:
                     _camera.Move(new Vector2(-1, 0)); 
-                    break;
-                case Microsoft.Xna.Framework.Input.Keys.D1:
-                for(var i = 0; i < 9; i++)
-                    (_world.CurrentArea as Fantasy.Game.Farm).TillAt(new Vector2(32 + 32 * (i % 3), 32 + 32 * (i / 3)));
-                    break;
-                case Microsoft.Xna.Framework.Input.Keys.D2:
-                for(var i = 0; i < 9; i++)
-                    (_world.CurrentArea as Fantasy.Game.Farm).WaterAt(new Vector2(32 + 32 * (i % 3), 32 + 32 * (i / 3)));
-                    break;
-                case Microsoft.Xna.Framework.Input.Keys.D3:
-                for(var i = 0; i < 9; i++)
-                    (_world.CurrentArea as Fantasy.Game.Farm).HarvestAt(new Vector2(32 + 32 * (i % 3), 32 + 32 * (i / 3)));
-                    break;
-                case Microsoft.Xna.Framework.Input.Keys.D9:
-                for(var i = 0; i < 9; i++)
-                    (_world.CurrentArea as Fantasy.Game.Farm).PlantAt("rose", new Vector2(32 + 32 * (i % 3), 32 + 32 * (i / 3)));
-                    break;
-                case Microsoft.Xna.Framework.Input.Keys.D0:
-                    (_world.CurrentArea as Fantasy.Game.Farm).GrowAll();
-                    break;
+                    break;                
                 case Microsoft.Xna.Framework.Input.Keys.Escape:
                     Environment.Exit(0);
                     break;
@@ -106,6 +91,21 @@ namespace Fantasy.Game.Screens
                 case Microsoft.Xna.Framework.Input.Keys.Right:
                     _world.CurrentActor.Move(new Vector2(1, 0)); 
                     break;
+                    case Microsoft.Xna.Framework.Input.Keys.D1:
+                    (_world.CurrentArea as Fantasy.Game.Farm).TillAt(_world.CurrentActor.GetFacingDirection());
+                    break;
+                case Microsoft.Xna.Framework.Input.Keys.D2:
+                    (_world.CurrentArea as Fantasy.Game.Farm).WaterAt(_world.CurrentActor.GetFacingDirection());
+                    break;
+                case Microsoft.Xna.Framework.Input.Keys.D3:
+                    (_world.CurrentArea as Fantasy.Game.Farm).HarvestAt(_world.CurrentActor.GetFacingDirection());
+                    break;
+                case Microsoft.Xna.Framework.Input.Keys.D9:
+                    (_world.CurrentArea as Fantasy.Game.Farm).PlantAt("rose", _world.CurrentActor.GetFacingDirection());
+                    break;
+                case Microsoft.Xna.Framework.Input.Keys.D0:
+                    (_world.CurrentArea as Fantasy.Game.Farm).GrowAll();
+                    break;
                 case Microsoft.Xna.Framework.Input.Keys.Escape:
                     Environment.Exit(0);
                     break;
@@ -116,11 +116,16 @@ namespace Fantasy.Game.Screens
             _keyboardListener.Update(gameTime);
             _world.Update(gameTime);
             _collisionComponent.Update(gameTime);
+
+            _mapTileReticule.Position = _world.CurrentActor.GetFacingDirection();
+            
+
         }
 
         public override void Draw(GameTime gameTime)
         {
             _spriteRenderer.Begin(_camera);
+            _spriteRenderer.Draw(_mapTileReticule);
             _world.Draw(gameTime, _spriteRenderer);
             _spriteRenderer.End(gameTime);
         }
