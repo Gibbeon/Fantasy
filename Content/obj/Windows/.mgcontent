@@ -4,15 +4,17 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/dev/Fantasy/Content/adventurer.aseprite</File>
-    <File>C:/dev/Fantasy/Content/crops.aseprite</File>
-    <File>C:/dev/Fantasy/Content/sample.tmx</File>
-    <File>C:/dev/Fantasy/Content/Sensation.fnt</File>
-    <File>C:/dev/Fantasy/Content/Sensation_0.png</File>
-    <File>C:/dev/Fantasy/Content/sm_arial.fnt</File>
-    <File>C:/dev/Fantasy/Content/sm_arial_0.png</File>
+    <File>C:/dev/Fantasy/Content/Actors/adventurer.aseprite</File>
+    <File>C:/dev/Fantasy/Content/Fonts/Sensation.fnt</File>
+    <File>C:/dev/Fantasy/Content/Fonts/Sensation_0.png</File>
+    <File>C:/dev/Fantasy/Content/Fonts/sm_arial.fnt</File>
+    <File>C:/dev/Fantasy/Content/Fonts/sm_arial_0.png</File>
+    <File>C:/dev/Fantasy/Content/Items/crops.aseprite</File>
+    <File>C:/dev/Fantasy/Content/Maps/sample.tmx</File>
+    <File>C:/dev/Fantasy/Content/Maps/tuxemon-town.tmx</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

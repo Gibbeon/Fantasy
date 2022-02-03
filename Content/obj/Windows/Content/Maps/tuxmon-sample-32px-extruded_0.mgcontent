@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/dev/Fantasy/Content/Maps/tuxmon-sample-32px-extruded.png</SourceFile>
+  <SourceTime>2022-02-02T10:29:18.6632341-06:00</SourceTime>
+  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxmon-sample-32px-extruded_0.xnb</DestFile>
+  <DestTime>2022-02-02T10:46:49.2698744-06:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2020-08-10T16:17:54-05:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54-05:00</ProcessorTime>
+  <Parameters>
+    <Key>ColorKeyColor</Key>
+    <Value>0,0,0,0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ColorKeyEnabled</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

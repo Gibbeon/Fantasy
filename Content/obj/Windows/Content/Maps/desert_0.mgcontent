@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/dev/Fantasy/Content/Maps/desert.tsx</SourceFile>
+  <SourceTime>2022-02-02T10:01:28.056-06:00</SourceTime>
+  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Content/Maps/desert_0.xnb</DestFile>
+  <DestTime>2022-02-02T10:46:49.1618745-06:00</DestTime>
+  <Importer>TiledMapTilesetImporter</Importer>
+  <ImporterTime>2020-08-29T17:17:30-05:00</ImporterTime>
+  <Processor>TiledMapTilesetProcessor</Processor>
+  <ProcessorTime>2020-08-29T17:17:30-05:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset>
+    <string>C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tmw_desert_spacing_0.xnb</string>
+  </BuildAsset>
+  <BuildOutput />
+</PipelineBuildEvent>

@@ -2,24 +2,25 @@ using System.Linq;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Fantasy.Framework2D;
+using Fantasy.Game.Actors;
 
 namespace Fantasy.Game
 {
     public class World
     {
         Microsoft.Xna.Framework.Game _game;
-        List<Creature> _creatures;
+        List<BaseActor> _creatures;
 
         public Area CurrentArea {
             get;
             protected set;
         }
-        public Creature CurrentActor 
+        public BaseActor CurrentActor 
         {
             get => _creatures.FirstOrDefault();
         }
 
-        public List<Creature> Creatures
+        public List<BaseActor> Creatures
         {
             get => _creatures;
         }
@@ -32,11 +33,11 @@ namespace Fantasy.Game
         public void Initialize() 
         {
             CurrentArea = new Farm(_game);
-            CurrentArea.Initialize("sample");
+            CurrentArea.Initialize("maps/tuxemon-town");
 
-            _creatures = new List<Creature>();
-            var creature = new Creature(_game);
-            creature.Initialize("adventurer");
+            _creatures = new List<BaseActor>();
+            var creature = new Player(_game);
+            creature.Initialize("actors/adventurer");
             _creatures.Add(creature);
         }
 

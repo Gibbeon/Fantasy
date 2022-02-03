@@ -10,6 +10,7 @@ using MonoGame.Extended.Input.InputListeners;
 using Fantasy.Framework2D;
 using MonoGame.Extended.Collisions;
 using MonoGame.Extended.Sprites;
+using Fantasy.Game.Actors;
 
 namespace Fantasy.Game.Screens
 {  
@@ -20,7 +21,7 @@ namespace Fantasy.Game.Screens
         private OrthographicCamera _camera;
         private SpriteRenderer _spriteRenderer;  
         CollisionComponent _collisionComponent;
-        MapTileReticule _mapTileReticule;
+        //MapTileReticule _mapTileReticule;
         public LocalAreaScreen(Microsoft.Xna.Framework.Game game) : base (game)
         {
             
@@ -31,8 +32,8 @@ namespace Fantasy.Game.Screens
             _camera         = new OrthographicCamera(Game.GraphicsDevice); 
             _spriteRenderer    = new SpriteRenderer(Game.GraphicsDevice);
 
-            _mapTileReticule = new MapTileReticule(Game);
-            _mapTileReticule.Initialize();
+           // _mapTileReticule = new MapTileReticule(Game);
+            //_mapTileReticule.Initialize();
 
             _world          = new Game.World(Game);
             _world.Initialize(); 
@@ -80,31 +81,31 @@ namespace Fantasy.Game.Screens
             switch(args.Key)
             {
                 case Microsoft.Xna.Framework.Input.Keys.Left:
-                    _world.CurrentActor.Move(new Vector2(-1, 0)); 
+                    _world.CurrentActor.Walk(new Vector2(-1, 0)); 
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.Up:
-                    _world.CurrentActor.Move(new Vector2(0, -1)); 
+                    _world.CurrentActor.Walk(new Vector2(0, -1)); 
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.Down:
-                    _world.CurrentActor.Move(new Vector2(0, 1)); 
+                    _world.CurrentActor.Walk(new Vector2(0, 1)); 
                     break;                    
                 case Microsoft.Xna.Framework.Input.Keys.Right:
-                    _world.CurrentActor.Move(new Vector2(1, 0)); 
+                    _world.CurrentActor.Walk(new Vector2(1, 0)); 
                     break;
                     case Microsoft.Xna.Framework.Input.Keys.D1:
-                    (_world.CurrentArea as Fantasy.Game.Farm).TillAt(_world.CurrentActor.GetFacingDirection());
+                    //(_world.CurrentArea as Fantasy.Game.Farm).TillAt(_world.CurrentActor.GetFacingDirection());
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.D2:
-                    (_world.CurrentArea as Fantasy.Game.Farm).WaterAt(_world.CurrentActor.GetFacingDirection());
+                    //(_world.CurrentArea as Fantasy.Game.Farm).WaterAt(_world.CurrentActor.GetFacingDirection());
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.D3:
-                    (_world.CurrentArea as Fantasy.Game.Farm).HarvestAt(_world.CurrentActor.GetFacingDirection());
+                    //(_world.CurrentArea as Fantasy.Game.Farm).HarvestAt(_world.CurrentActor.GetFacingDirection());
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.D9:
-                    (_world.CurrentArea as Fantasy.Game.Farm).PlantAt("rose", _world.CurrentActor.GetFacingDirection());
+                    //(_world.CurrentArea as Fantasy.Game.Farm).PlantAt("rose", _world.CurrentActor.GetFacingDirection());
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.D0:
-                    (_world.CurrentArea as Fantasy.Game.Farm).GrowAll();
+                    //(_world.CurrentArea as Fantasy.Game.Farm).GrowAll();
                     break;
                 case Microsoft.Xna.Framework.Input.Keys.Escape:
                     Environment.Exit(0);
@@ -117,7 +118,7 @@ namespace Fantasy.Game.Screens
             _world.Update(gameTime);
             _collisionComponent.Update(gameTime);
 
-            _mapTileReticule.Position = _world.CurrentActor.GetFacingDirection();
+            //_mapTileReticule.Position = _world.CurrentActor.GetFacingDirection();
             
 
         }
@@ -125,7 +126,7 @@ namespace Fantasy.Game.Screens
         public override void Draw(GameTime gameTime)
         {
             _spriteRenderer.Begin(_camera);
-            _spriteRenderer.Draw(_mapTileReticule);
+            //_spriteRenderer.Draw(_mapTileReticule);
             _world.Draw(gameTime, _spriteRenderer);
             _spriteRenderer.End(gameTime);
         }

@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Extended;
 
 namespace Fantasy.Framework2D
 {
@@ -13,12 +14,14 @@ namespace Fantasy.Framework2D
         void IDrawable.Draw(GameTime gameTime) { throw new NotSupportedException(); }
     }
 
-    public abstract class SpriteBatchDrawable : Drawable, ISpriteBatchDrawable
+    public abstract class SpriteBatchDrawable : SimpleDrawableGameComponent, ISpriteBatchDrawable
     {        
         public SpriteRenderState RenderState { get; protected set; }
         public Rectangle BoundingRectangle { get; }
         public abstract void DrawTo(GameTime gameTime, SpriteBatch spriteBatch);
-        public override void Draw(GameTime gameTime) { throw new NotSupportedException(); }
+        public override void Draw(GameTime gameTime) { 
+            throw new NotSupportedException(); 
+        }
     }
 
 }

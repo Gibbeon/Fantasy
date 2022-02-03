@@ -17,7 +17,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin adventurer.aseprite
+#begin Actors/adventurer.aseprite
 /importer:AsepriteDocumentImporter
 /processor:AsepriteDocumentProcessor
 /processorParam:SheetType=Packed
@@ -27,9 +27,43 @@
 /processorParam:BorderPadding=0
 /processorParam:Spacing=0
 /processorParam:InnerPadding=0
-/build:adventurer.aseprite
+/build:Actors/adventurer.aseprite
 
-#begin crops.aseprite
+#begin Fonts/Sensation.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/Sensation.fnt
+
+#begin Fonts/Sensation_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Fonts/Sensation_0.png
+
+#begin Fonts/sm_arial.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/sm_arial.fnt
+
+#begin Fonts/sm_arial_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Fonts/sm_arial_0.png
+
+#begin Items/crops.aseprite
 /importer:AsepriteDocumentImporter
 /processor:AsepriteDocumentProcessor
 /processorParam:SheetType=Packed
@@ -39,44 +73,15 @@
 /processorParam:BorderPadding=0
 /processorParam:Spacing=0
 /processorParam:InnerPadding=0
-/build:crops.aseprite
+/build:Items/crops.aseprite
 
-#begin sample.tmx
+#begin Maps/sample.tmx
 /importer:TiledMapImporter
 /processor:TiledMapProcessor
-/build:sample.tmx
+/build:Maps/sample.tmx
 
-#begin Sensation.fnt
-/importer:BitmapFontImporter
-/processor:BitmapFontProcessor
-/build:Sensation.fnt
-
-#begin Sensation_0.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sensation_0.png
-
-#begin sm_arial.fnt
-/importer:BitmapFontImporter
-/processor:BitmapFontProcessor
-/build:sm_arial.fnt
-
-#begin sm_arial_0.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:sm_arial_0.png
+#begin Maps/tuxemon-town.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/tuxemon-town.tmx
 

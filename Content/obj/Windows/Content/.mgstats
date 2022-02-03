@@ -1,10 +1,12 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/dev/Fantasy/Content/adventurer.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",9592,37265,0.1050859
-"C:/dev/Fantasy/Content/crops.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.020073
-"C:/dev/Fantasy/Content/desert.tsx","C:/dev/Fantasy/Content/bin/Windows/Content/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0600871
-"C:/dev/Fantasy/Content/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1236811
-"C:/dev/Fantasy/Content/Sensation.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Sensation.xnb","BitmapFontProcessor","BitmapFontProcessorResult",35751,10059,0.1068703
-"C:/dev/Fantasy/Content/Sensation_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Sensation_0.xnb","TextureProcessor","Texture2DContent",11318,131157,0.1063789
-"C:/dev/Fantasy/Content/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",13263,3998,0.1030065
-"C:/dev/Fantasy/Content/sm_arial_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/sm_arial_0.xnb","TextureProcessor","Texture2DContent",10092,262229,0.0266342
-"C:/dev/Fantasy/Content/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/Content/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0270282
+"C:/dev/Fantasy/Content/Actors/adventurer.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Actors/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",4200,45502,0.1058055
+"C:/dev/Fantasy/Content/Fonts/Sensation.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/Sensation.xnb","BitmapFontProcessor","BitmapFontProcessorResult",35751,10059,0.024549
+"C:/dev/Fantasy/Content/Fonts/Sensation_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/Sensation_0.xnb","TextureProcessor","Texture2DContent",11318,131157,0.0246594
+"C:/dev/Fantasy/Content/Fonts/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",13263,3998,0.0013569
+"C:/dev/Fantasy/Content/Fonts/sm_arial_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial_0.xnb","TextureProcessor","Texture2DContent",10092,262229,0.0153067
+"C:/dev/Fantasy/Content/Items/crops.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Items/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.0191025
+"C:/dev/Fantasy/Content/Maps/desert.tsx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0375198
+"C:/dev/Fantasy/Content/Maps/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1008
+"C:/dev/Fantasy/Content/Maps/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0057332
+"C:/dev/Fantasy/Content/Maps/tuxemon-town.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxemon-town.xnb","TiledMapProcessor","TiledMapContentItem",99970,40691,0.1441083
+"C:/dev/Fantasy/Content/Maps/tuxmon-sample-32px-extruded.png","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxmon-sample-32px-extruded_0.xnb","TextureProcessor","Texture2DContent",192008,3329365,0.0680333

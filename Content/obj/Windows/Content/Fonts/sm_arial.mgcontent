@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/dev/Fantasy/Content/Fonts/sm_arial.fnt</SourceFile>
+  <SourceTime>2022-02-02T10:02:16.1849998-06:00</SourceTime>
+  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial.xnb</DestFile>
+  <DestTime>2022-02-02T10:46:49.0358735-06:00</DestTime>
+  <Importer>BitmapFontImporter</Importer>
+  <ImporterTime>2020-08-29T17:17:30-05:00</ImporterTime>
+  <Processor>BitmapFontProcessor</Processor>
+  <ProcessorTime>2020-08-29T17:17:30-05:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
