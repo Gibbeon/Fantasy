@@ -165,7 +165,7 @@ namespace Fantasy.Game
             return tile;
         }
 
-        // player actions
+        // player Activities
         public void TillAt(Vector2 position)
         {
             var tile = GetCropTile(position) ??  CreateCropTileAt(position);

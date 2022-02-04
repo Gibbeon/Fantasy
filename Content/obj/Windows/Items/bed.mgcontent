@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/dev/Fantasy/Content/Items/crops.aseprite</SourceFile>
-  <SourceTime>2022-02-02T10:01:56.708-06:00</SourceTime>
-  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Content/Items/crops.xnb</DestFile>
-  <DestTime>2022-02-03T18:14:03.6851733-06:00</DestTime>
+  <SourceFile>C:/dev/Fantasy/Content/Items/bed.aseprite</SourceFile>
+  <SourceTime>2022-02-03T08:01:42.085036-06:00</SourceTime>
+  <DestFile>C:/dev/Fantasy/Content/bin/Windows/Items/bed.xnb</DestFile>
+  <DestTime>2022-02-03T09:49:38.0821677-06:00</DestTime>
   <Importer>AsepriteDocumentImporter</Importer>
   <ImporterTime>2021-01-25T00:40:14-06:00</ImporterTime>
   <Processor>AsepriteDocumentProcessor</Processor>

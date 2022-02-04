@@ -20,40 +20,47 @@ namespace Fantasy.Game.Screens
         private KeyboardListener  _keyboardListener;        
         private OrthographicCamera _camera;
         private SpriteRenderer _spriteRenderer;  
-        CollisionComponent _collisionComponent;
-        //MapTileReticule _mapTileReticule;
+        private CollisionComponent _collisionComponent;        
+        private MapTileReticule _mapTileReticule;
         public LocalAreaScreen(Microsoft.Xna.Framework.Game game) : base (game)
         {
             
         }
 
+        private Fantasy.Game.Entities.Bed _bed;
         public override void Initialize() 
         {
             _camera         = new OrthographicCamera(Game.GraphicsDevice); 
             _spriteRenderer    = new SpriteRenderer(Game.GraphicsDevice);
 
-           // _mapTileReticule = new MapTileReticule(Game);
-            //_mapTileReticule.Initialize();
-
             _world          = new Game.World(Game);
             _world.Initialize(); 
 
+            _bed = new Fantasy.Game.Entities.Bed(Game);
+            _bed.Initialize("items/bed"); 
+            _bed.Position = new Vector2(128, 128);
+
             _collisionComponent = new CollisionComponent(_world.CurrentArea.Bounds);
             _collisionComponent.Initialize();
-
-            _collisionComponent.Insert(_world.CurrentActor);
 
             _world.CurrentArea.GetCollisionActors().ForEach( n => _collisionComponent.Insert(n));
 
             _keyboardListener = new KeyboardListener( new KeyboardListenerSettings()
             {
                 RepeatPress = true,
-                InitialDelayMilliseconds = 0           
+                InitialDelayMilliseconds = 0,
+                RepeatDelayMilliseconds = 0           
             });
 
-            _keyboardListener.KeyPressed += MoveSprite;
-            
+            _collisionComponent.Insert(_bed);
+            _collisionComponent.Insert(_world.CurrentActor);
+
+            _mapTileReticule = new MapTileReticule(_world.CurrentActor as Fantasy.Game.Actors.Player);
+            _mapTileReticule.Initialize();
+
+            _keyboardListener.KeyPressed += MoveSprite;            
         }
+
         protected void MoveCamera(object sender, KeyboardEventArgs args)
         {
             switch(args.Key)
@@ -112,22 +119,23 @@ namespace Fantasy.Game.Screens
                     break;
             }
         }
+
         public override void Update(GameTime gameTime)
         {
             _keyboardListener.Update(gameTime);
             _world.Update(gameTime);
+            _bed.Update(gameTime);
             _collisionComponent.Update(gameTime);
-
-            //_mapTileReticule.Position = _world.CurrentActor.GetFacingDirection();
-            
-
+            _mapTileReticule.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
         {
             _spriteRenderer.Begin(_camera);
-            //_spriteRenderer.Draw(_mapTileReticule);
+            _spriteRenderer.Draw(_mapTileReticule);
             _world.Draw(gameTime, _spriteRenderer);
+            _spriteRenderer.Draw(_bed);
+            
             _spriteRenderer.End(gameTime);
         }
     }

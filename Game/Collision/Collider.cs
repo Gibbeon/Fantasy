@@ -3,11 +3,11 @@ using MonoGame.Extended.Collisions;
 
 namespace Fantasy.Game
 {
-    public class CollisionActor : ICollisionActor
+    public class Collider : ICollisionActor
     {
         public IShapeF Bounds { get; set; }
 
-        public CollisionActor(IShapeF bounds)
+        public Collider(IShapeF bounds)
         {
             Bounds = bounds;
         }

@@ -3,7 +3,7 @@
   <SourceFile>C:/dev/Fantasy/Content/Maps/sample.tmx</SourceFile>
   <SourceTime>2022-02-02T10:01:28.003-06:00</SourceTime>
   <DestFile>C:/dev/Fantasy/Content/bin/Windows/Maps/sample.xnb</DestFile>
-  <DestTime>2022-02-02T23:24:12.7420353-06:00</DestTime>
+  <DestTime>2022-02-03T09:49:38.1981667-06:00</DestTime>
   <Importer>TiledMapImporter</Importer>
   <ImporterTime>2020-08-29T17:17:30-05:00</ImporterTime>
   <Processor>TiledMapProcessor</Processor>

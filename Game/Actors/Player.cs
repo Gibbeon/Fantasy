@@ -1,15 +1,17 @@
+using Fantasy.Game.Actors.Activities;
+
 namespace Fantasy.Game.Actors
 {
-    public class Player : BaseActor
+    public class Player : Actor
     {
         public Player(Microsoft.Xna.Framework.Game game) : base(game)
         {
 
         }
 
-        public override void AssignNewActorAction()
+        public override void AssignNewActorActivity()
         {
-            SetAction(new IdleAction(this));
+            SetActivity(new Idle(this));
         }
     }
 }

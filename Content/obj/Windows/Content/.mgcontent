@@ -9,11 +9,13 @@
     <File>C:/dev/Fantasy/Content/Fonts/Sensation_0.png</File>
     <File>C:/dev/Fantasy/Content/Fonts/sm_arial.fnt</File>
     <File>C:/dev/Fantasy/Content/Fonts/sm_arial_0.png</File>
+    <File>C:/dev/Fantasy/Content/Items/bed.aseprite</File>
     <File>C:/dev/Fantasy/Content/Items/crops.aseprite</File>
     <File>C:/dev/Fantasy/Content/Maps/sample.tmx</File>
     <File>C:/dev/Fantasy/Content/Maps/tuxemon-town.tmx</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

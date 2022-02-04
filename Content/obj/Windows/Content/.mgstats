@@ -1,12 +1,13 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/dev/Fantasy/Content/Actors/adventurer.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Actors/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",4200,45502,0.1058055
-"C:/dev/Fantasy/Content/Fonts/Sensation.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/Sensation.xnb","BitmapFontProcessor","BitmapFontProcessorResult",35751,10059,0.024549
-"C:/dev/Fantasy/Content/Fonts/Sensation_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/Sensation_0.xnb","TextureProcessor","Texture2DContent",11318,131157,0.0246594
-"C:/dev/Fantasy/Content/Fonts/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",13263,3998,0.0013569
-"C:/dev/Fantasy/Content/Fonts/sm_arial_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial_0.xnb","TextureProcessor","Texture2DContent",10092,262229,0.0153067
-"C:/dev/Fantasy/Content/Items/crops.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Items/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.0191025
-"C:/dev/Fantasy/Content/Maps/desert.tsx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0375198
-"C:/dev/Fantasy/Content/Maps/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1008
-"C:/dev/Fantasy/Content/Maps/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0057332
-"C:/dev/Fantasy/Content/Maps/tuxemon-town.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxemon-town.xnb","TiledMapProcessor","TiledMapContentItem",99970,40691,0.1441083
-"C:/dev/Fantasy/Content/Maps/tuxmon-sample-32px-extruded.png","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxmon-sample-32px-extruded_0.xnb","TextureProcessor","Texture2DContent",192008,3329365,0.0680333
+"C:/dev/Fantasy/Content/Actors/adventurer.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Actors/adventurer.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",4200,45502,0.1061041
+"C:/dev/Fantasy/Content/Fonts/Sensation.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/Sensation.xnb","BitmapFontProcessor","BitmapFontProcessorResult",35751,10059,0.02542
+"C:/dev/Fantasy/Content/Fonts/Sensation_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/Sensation_0.xnb","TextureProcessor","Texture2DContent",11318,131157,0.0250242
+"C:/dev/Fantasy/Content/Fonts/sm_arial.fnt","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial.xnb","BitmapFontProcessor","BitmapFontProcessorResult",13263,3998,0.0015329
+"C:/dev/Fantasy/Content/Fonts/sm_arial_0.png","C:/dev/Fantasy/Content/bin/Windows/Content/Fonts/sm_arial_0.xnb","TextureProcessor","Texture2DContent",10092,262229,0.0069401
+"C:/dev/Fantasy/Content/Items/bed.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Items/bed.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",1074,20108,0.0015928
+"C:/dev/Fantasy/Content/Items/crops.aseprite","C:/dev/Fantasy/Content/bin/Windows/Content/Items/crops.xnb","AsepriteDocumentProcessor","AsepriteDocumentProcessorResult",23420,498259,0.020389
+"C:/dev/Fantasy/Content/Maps/desert.tsx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/desert_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",4787,765,0.0394473
+"C:/dev/Fantasy/Content/Maps/sample.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/sample.xnb","TiledMapProcessor","TiledMapContentItem",826,12966,0.1062612
+"C:/dev/Fantasy/Content/Maps/tmw_desert_spacing.png","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tmw_desert_spacing_0.xnb","TextureProcessor","Texture2DContent",42360,244945,0.0061411
+"C:/dev/Fantasy/Content/Maps/tuxemon-town.tmx","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxemon-town.xnb","TiledMapProcessor","TiledMapContentItem",99970,40691,0.0924153
+"C:/dev/Fantasy/Content/Maps/tuxmon-sample-32px-extruded.png","C:/dev/Fantasy/Content/bin/Windows/Content/Maps/tuxmon-sample-32px-extruded_0.xnb","TextureProcessor","Texture2DContent",192008,3329365,0.0697443

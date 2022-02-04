@@ -9,18 +9,18 @@ namespace Fantasy.Game
     public class World
     {
         Microsoft.Xna.Framework.Game _game;
-        List<BaseActor> _creatures;
+        List<Actor> _creatures;
 
         public Area CurrentArea {
             get;
             protected set;
         }
-        public BaseActor CurrentActor 
+        public Actor CurrentActor 
         {
             get => _creatures.FirstOrDefault();
         }
 
-        public List<BaseActor> Creatures
+        public List<Actor> Creatures
         {
             get => _creatures;
         }
@@ -35,7 +35,7 @@ namespace Fantasy.Game
             CurrentArea = new Farm(_game);
             CurrentArea.Initialize("maps/tuxemon-town");
 
-            _creatures = new List<BaseActor>();
+            _creatures = new List<Actor>();
             var creature = new Player(_game);
             creature.Initialize("actors/adventurer");
             _creatures.Add(creature);

@@ -53,7 +53,7 @@ namespace Fantasy.Game
                                     (int)def.Size.Height
                                     );
 
-                                Result.Add(new WallCollider(rect));
+                                Result.Add(new Wall(rect));
                             }
                         }
                     }
